@@ -1,6 +1,6 @@
 use std::env;
 fn main() {
-    let args: Vec<String> = env::args().skip(0).collect();
+    let args: Vec<String> = env::args().skip(1).collect();
     let mut no_newline: bool = false;
     if args.len() <= 1 {
         return;
